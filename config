@@ -140,7 +140,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         # status_command i3status
-	status_command /home/suzuki/.i3/i3status.sh
+	status_command $HOME/.i3/i3status.sh
     colors {
         background #000000
         statusline #00ff00
@@ -152,4 +152,4 @@ bar {
     } 
 }
 
-exec_always /home/suzuki/.i3/i3wmauto
+exec_always $HOME/.i3/i3wmauto

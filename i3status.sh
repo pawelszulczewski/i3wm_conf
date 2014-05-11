@@ -2,7 +2,7 @@
 IFS=$'\n'
 FILE=http://www.if.pw.edu.pl/~meteo/index.php
 
-i3status -c /home/suzuki/.i3/i3status.conf | while :
+i3status -c $HOME/.i3/i3status.conf | while :
 do 
     read line
     for i in `curl -s $FILE | grep 'ff7777'`
