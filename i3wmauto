@@ -26,28 +26,33 @@ wait_for_program () {
     done
 }
 
+feh --bg-scale /home/suzuki/Obrazy/wallpapers/chicago_hd.jpg &
+# /home/suzuki/pySelectWallpaper.py &
+
 # kmix
-kmix --keepvisibility &
+# kmix --keepvisibility &
 #wait_for_program
 
 # terminals
-#rxvt-unicode -vb &
-konsole &
+#rxvt-unicode -vb -sb &
+# konsole &
+gnome-terminal &
+#uxterm &
 wait_for_program
 
 #i3-msg split v
-#rxvt-unicode &
+#tilda &
 #wait_for_program
 
-i3-msg workspace 2
-icedove &
-wait_for_program
+#i3-msg workspace 2
+#icedove &
+#wait_for_program
 
-i3-msg workspace 3
-firefox &
-wait_for_program
+# i3-msg workspace 3
+#firefox &
+#wait_for_program
 
-i3-msg workspace 1
+# i3-msg workspace 1
 
 # need a refresh
 xrefresh &
