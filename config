@@ -112,6 +112,12 @@ bindsym $mod+z exec pactl set-sink-volume 0 +5%
 bindsym $mod+x exec pactl set-sink-volume 0 -- -5%
 bindsym $mod+c exec pactl set-sink-mute 0 toggle
 
+# mocp control
+bindsym $mod+p exec mocp -P
+bindsym $mod+u exec mocp -U
+bindsym $mod+n exec mocp -f
+bindsym $mod+b exec mocp -r
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
