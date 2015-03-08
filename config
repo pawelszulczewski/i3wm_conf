@@ -113,10 +113,11 @@ bindsym $mod+x exec pactl set-sink-volume 0 -- -5%
 bindsym $mod+c exec pactl set-sink-mute 0 toggle
 
 # mocp control
-bindsym $mod+p exec mocp -P
-bindsym $mod+u exec mocp -U
-bindsym $mod+n exec mocp -f
-bindsym $mod+b exec mocp -r
+bindsym $mod+p exec mocp -G		# play/pause toggle
+bindsym $mod+n exec mocp -f		# play next song
+bindsym $mod+b exec mocp -r		# play previous song
+bindsym $mod+y exec mocp -k -10		# seek 10 seconds backward
+bindsym $mod+u exec mocp -k 10		# seek 10 seconds forward
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
