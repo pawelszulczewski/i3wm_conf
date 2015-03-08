@@ -26,7 +26,7 @@ wait_for_program () {
     done
 }
 
-feh --bg-scale /home/suzuki/Obrazy/wallpapers/chicago_hd.jpg &
+feh --bg-scale /home/suzuki/Obrazy/wallpapers/nebula.jpg &
 # /home/suzuki/pySelectWallpaper.py &
 
 # kmix
@@ -36,21 +36,21 @@ feh --bg-scale /home/suzuki/Obrazy/wallpapers/chicago_hd.jpg &
 # terminals
 #rxvt-unicode -vb -sb &
 # konsole &
-gnome-terminal &
-#uxterm &
+terminator &
+#xterm &
 wait_for_program
 
 #i3-msg split v
 #tilda &
 #wait_for_program
 
-#i3-msg workspace 2
-#icedove &
-#wait_for_program
+i3-msg workspace 2
+thunderbird &
+wait_for_program
 
-# i3-msg workspace 3
-#firefox &
-#wait_for_program
+i3-msg workspace 3
+firefox &
+wait_for_program
 
 # i3-msg workspace 1
 
